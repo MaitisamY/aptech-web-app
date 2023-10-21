@@ -1,0 +1,67 @@
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" href="/css/login.css">
+<title>Aptech university road | Login</title>
+</head>
+<body>
+    <header>
+        <!-- Temporary Links -->
+        <a href="/student">student</a>
+        <a href="/teacher">teacher</a>
+        <a href="/admin">admin</a>
+        <!-- Temporary Links -->
+    </header>
+    <main>
+        <div class="aptech-intro">
+            <h1 id="headNote"></h1>
+            <h2 id="subtitle"></h2>
+        </div>
+        <div class="login-area">
+            <ul>
+                <li>
+                    <a id="student" href="#">Student</a>
+                </li>
+                <li>
+                    <a id="teacher" href="#">Teacher</a>
+                </li>
+                <li>
+                    <a id="admin" href="#">Admin</a>
+                </li>
+            </ul>
+            <div id="studentLogin" class="login-box">
+                <form action="/studentLogin" method="post">
+                    <input id="studentUsername" type="text" placeholder="Student Username" name="username" required>
+                    <input id="studentPassword" type="password" placeholder="Student Password" name="password" required>
+                    <label><input id="studentShowPassword" type="checkbox"> Show password</label>
+                    <h5>Kindly contact your teacher or administrator, if you are not yet registered.</h5>
+                    <button id="studentSubmit" name="submit">Login</button>
+                </form>
+                <p class="credits"></p>
+            </div>
+            <div id="teacherLogin" class="login-box invisible">
+                <form action="/teacherLogin" method="post">
+                    <input id="teacherUsername" type="text" placeholder="Teacher Username" name="username" required>
+                    <input id="teacherPassword" type="password" placeholder="Teacher Password" name="password" required>
+                    <label><input id="teacherShowPassword" type="checkbox"> Show password</label>
+                    <h5>Kindly contact your administrator, if you are not yet registered as a teacher.</h5>
+                    <button id="teacherSubmit" name="submit">Login</button>
+                </form>
+                <p class="credits"></p>
+            </div>
+            <div id="adminLogin" class="login-box invisible">
+                <form action="/adminLogin" method="post">
+                    <input id="adminUsername" type="text" placeholder="Admin Username" name="username" required>
+                    <input id="adminPassword" type="password" placeholder="Admin Password" name="password" required>
+                    <label><input id="adminShowPassword" type="checkbox"> Show password</label>
+                    <h5>Kindly contact one of your administrators, if you are not yet registered as an admin.</h5>
+                    <button id="adminSubmit" name="submit">Login</button>
+                </form>
+                <p class="credits"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="message"><%= locals.error %></div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/login.js"></script>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,17 @@
+{
+  "name": "aptech-uni-road-exam-portal",
+  "version": "1.0.0",
+  "description": "This is The Web Application for APTECH University Road Branch, Gulistan-e-Jauhar, Karachi, Pakistan. It serves the purpose for online MCQ's tests.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M aitisam Y",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

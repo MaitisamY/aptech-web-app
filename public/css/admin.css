@@ -1,0 +1,94 @@
+body {
+    background-color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 15% 15% 55% 15%;
+}
+
+.sidebar {
+    grid-area: 1 / 2 / 1 / 2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    margin-top: 50px;
+    padding: 30px 0 30px 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #febe10;
+    text-align: center;
+    font-family: 'Tilt Neon', sans-serif;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+}
+
+.sidebar h1 {
+    place-self: center;
+}
+
+.sidebar ul {
+    text-align: left;
+    display: block;
+    padding: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sidebar ul li {
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a:focus, .sidebar ul li a:active, .sidebar ul li a.active {
+    background-color: #fff;
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+.main-content {
+    grid-area: 1 / 3 / 1 / 3;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    min-height: 500px;
+    place-self: center;
+    margin-top: 50px;
+    padding: 50px 50px 20px 50px;
+    -webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.29);
+    border-radius: 40px;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.status-box {
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(254,190,16,1);
+    -moz-box-shadow: 0px 0px 5px -2px rgba(254,190,16,1);
+    box-shadow: 0px 0px 5px -2px rgba(254,190,16,1);
+    border-radius: 40px;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+    height: fit-content;
+    margin-top: 20px;
+    place-self: center;
+}
+
+.status-box h2 {
+    font-size: 2rem;
+}
