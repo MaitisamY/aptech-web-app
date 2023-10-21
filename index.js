@@ -26,9 +26,46 @@ app.get("/teacher", (req, res) => {
     res.render("teacher/index.ejs");
 });
 
+// Routes to admin portal starts -->
+
 app.get("/admin", (req, res) => {
-    res.render("admin/index.ejs");
+    res.render("admin/dashboard.ejs");
 });
+
+app.get("/dashboard", (req, res) => {
+    res.render("admin/dashboard.ejs");
+});
+
+app.get("/profile", (req, res) => {
+    res.render("admin/profile.ejs");
+});
+
+app.get("/admins", (req, res) => {
+    res.render("admin/admins.ejs");
+});
+
+app.get("/classes", (req, res) => {
+    res.render("admin/classes.ejs");
+});
+
+app.get("/teachers", (req, res) => {
+    res.render("admin/teachers.ejs");
+});
+
+app.get("/students", (req, res) => {
+    res.render("admin/students.ejs");
+});
+
+app.get("/tests", (req, res) => {
+    res.render("admin/tests.ejs");
+});
+
+app.get("/notices", (req, res) => {
+    res.render("admin/notices.ejs");
+});
+
+// Routes to admin portal starts <--
+
 
 // <-- Temperory routs     //
 

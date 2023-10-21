@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #383636;
 }
 
 main {
@@ -47,16 +47,16 @@ main {
 .sidebar ul li a {
     display: block;
     padding: 10px 20px;
-    color: black;
+    color: #383636;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
 }
 
 .sidebar ul li a:hover, .sidebar ul li a:focus, .sidebar ul li a:active, .sidebar ul li a.active {
-    background-color: #fff;
-    color: black;
-    transition: 0.3s ease-in;
+    background-color: #383636;
+    color: #febe10;
+    transition: 0.5s ease-in;
 }
 
 .main-content {
@@ -82,12 +82,13 @@ main {
 }
 
 .status-box {
-    -webkit-box-shadow: 10px 10px 0px -1px rgba(0,0,0,1);
-    -moz-box-shadow: 10px 10px 0px -1px rgba(0,0,0,1);
-    box-shadow: 10px 10px 0px -1px rgba(0,0,0,1);
-    border: 2px solid #000;
+    -webkit-box-shadow: 10px 10px 0px -1px rgba(254,190,16,1);
+    -moz-box-shadow: 10px 10px 0px -1px rgba(254,190,16,1);
+    box-shadow: 10px 10px 0px -1px rgba(254,190,16,1);
+    border: 2px solid #febe10;
     padding: 20px;
     width: 85%;
+    color: #dbd6d6;
     height: fit-content;
     margin-top: 20px;
     border-radius: 5px;
@@ -98,11 +99,12 @@ main {
 }
 
 .status-box-short {
-    -webkit-box-shadow: 10px 10px 0px -1px rgba(0,0,0,1);
-    -moz-box-shadow: 10px 10px 0px -1px rgba(0,0,0,1);
-    box-shadow: 10px 10px 0px -1px rgba(0,0,0,1);
-    border: 2px solid #000;
+    -webkit-box-shadow: 10px 10px 0px -1px rgba(254,190,16,1);
+    -moz-box-shadow: 10px 10px 0px -1px rgba(254,190,16,1);
+    box-shadow: 10px 10px 0px -1px rgba(254,190,16,1);
+    border: 2px solid #febe10;
     padding: 20px;
+    color: #dbd6d6;
     width: 35%;
     height: fit-content;
     margin-top: 20px;
@@ -136,7 +138,8 @@ main {
     position: absolute;
     width: 60px;
     height: 60px;
-    background-color: #fff;
+    color: #2f3439;
+    background-color: #dbd6d6;
     border-radius: 50%;
     margin-left: 20px;
     margin-top: 20px;
@@ -233,7 +236,7 @@ main {
     background-image: linear-gradient(90deg, #febe10 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #febe10 50%, #2f3439 50%, #2f3439);
   }
 
-.theme-changer {
+  .theme-changer {
     display: block;
     text-align: center;
     background-color: transparent;

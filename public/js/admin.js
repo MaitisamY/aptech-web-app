@@ -1,25 +1,18 @@
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+$(window).on( "load", () => {
+    
+    $( 'link[href*="admin-dark.css"]' ).attr( "disabled", "true" );
+    $( '#themeWhite' ).css( "display", "none" );
 
-function drawChart() {
+    $( '#themeBlack' ).on( "click", () => {
+        $( 'link[href*="admin-dark.css"]' ).removeAttr( "disabled" );
+        $( '#themeWhite' ).css( "display", "block" );
+        $( '#themeBlack' ).css( "display", "none" );
+    });
 
-// Set Data
-const data = google.visualization.arrayToDataTable([
-  ['Tests', 'Tests taken'],
-  ['Mr. Iftikhar',5],
-  ['Mr. Ahmed',4],
-  ['Mr. Roshan',14],
-  ['Mr. Patrick',17],
-  ['Mr. Noman',7]
-]);
+    $( '#themeWhite' ).on( "click", () => {
+        $( 'link[href*="admin-dark.css"]' ).attr( "disabled", "true" );
+        $( '#themeBlack' ).css( "display", "block" );
+        $( '#themeWhite' ).css( "display", "none" );
+    });
 
-// Set Options
-const options = {
-  title:'Tests taken by teachers till date'
-};
-
-// Draw
-const chart = new google.visualization.BarChart(document.getElementById('myChart'));
-chart.draw(data, options);
-
-}
+});
